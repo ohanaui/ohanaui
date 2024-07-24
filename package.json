@@ -18,7 +18,8 @@
     "prettier:check": "pnpm run prettier --check",
     "prettier:check:all": "pnpm run prettier:check .",
     "prettier:write": "pnpm run prettier --write",
-    "prettier:write:all": "pnpm run prettier:write ."
+    "prettier:write:all": "pnpm run prettier:write .",
+    "typecheck": "pnpm run -r --workspace-concurrency Infinity typecheck"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
