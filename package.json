@@ -3,10 +3,16 @@
     "private": true,
     "type": "module",
     "devDependencies": {
+        "@commitlint/cli": "^19.3.0",
+        "@commitlint/config-conventional": "^19.2.2",
+        "@commitlint/types": "^19.0.3",
         "husky": "^9.1.1"
     },
     "scripts": {
+        "commitlint": "commitlint",
+        "commitlint:edit": "pnpm run commitlint --edit",
         "husky": "husky",
+        "husky:commit-msg": "pnpm commitlint:edit",
         "prepare": "pnpm run husky"
     }
 }
