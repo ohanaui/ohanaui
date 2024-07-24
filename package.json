@@ -9,6 +9,7 @@
     "eslint:all": "pnpm run eslint .",
     "husky": "husky",
     "husky:commit-msg": "pnpm commitlint:edit",
+    "husky:pre-commit": "pnpm lint-staged",
     "lint": "pnpm run prettier:write:all && pnpm run eslint:all",
     "lint-staged": "lint-staged",
     "lint:check:all": "pnpm run prettier:check:all && pnpm run eslint:all",
@@ -28,6 +29,7 @@
     "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.1",
+    "lint-staged": "^15.2.7",
     "prettier": "^3.3.3",
     "prettier-plugin-packagejson": "^2.5.1",
     "typescript-eslint": "^7.17.0"
