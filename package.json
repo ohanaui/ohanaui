@@ -1,5 +1,12 @@
 {
     "name": "workspace",
     "private": true,
-    "type": "module"
+    "type": "module",
+    "devDependencies": {
+        "husky": "^9.1.1"
+    },
+    "scripts": {
+        "husky": "husky",
+        "prepare": "pnpm run husky"
+    }
 }
