@@ -45,6 +45,12 @@ importers:
         specifier: ^7.17.0
         version: 7.17.0(eslint@9.7.0)(typescript@5.5.4)
 
+  '@ohanaui/merge':
+    devDependencies:
+      '@tools/typescript':
+        specifier: workspace:*
+        version: link:../../@tools/typescript
+
   '@ohanaui/types':
     dependencies:
       '@types/react':
