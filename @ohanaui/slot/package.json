@@ -8,6 +8,9 @@
     "tsc:no-emit": "pnpm run tsc --noEmit",
     "typecheck": "pnpm run tsc:no-emit"
   },
+  "dependencies": {
+    "@ohanaui/merge": "workspace:*"
+  },
   "devDependencies": {
     "@tools/typescript": "workspace:*"
   },
