@@ -51,6 +51,22 @@ importers:
         specifier: workspace:*
         version: link:../../@tools/typescript
 
+  '@ohanaui/slot':
+    dependencies:
+      '@ohanaui/merge':
+        specifier: workspace:*
+        version: link:../merge
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.3
+      '@types/react-dom':
+        specifier: ^18.3.0
+        version: 18.3.0
+    devDependencies:
+      '@tools/typescript':
+        specifier: workspace:*
+        version: link:../../@tools/typescript
+
   '@ohanaui/types':
     dependencies:
       '@types/react':
