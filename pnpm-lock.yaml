@@ -51,6 +51,25 @@ importers:
         specifier: workspace:*
         version: link:../../@tools/typescript
 
+  '@ohanaui/ohanaui':
+    dependencies:
+      '@ohanaui/merge':
+        specifier: workspace:*
+        version: link:../merge
+      '@ohanaui/proxy':
+        specifier: workspace:*
+        version: link:../proxy
+      '@ohanaui/slot':
+        specifier: workspace:*
+        version: link:../slot
+      '@ohanaui/types':
+        specifier: workspace:*
+        version: link:../types
+    devDependencies:
+      '@tools/typescript':
+        specifier: workspace:*
+        version: link:../../@tools/typescript
+
   '@ohanaui/proxy':
     dependencies:
       '@ohanaui/slot':
