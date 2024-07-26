@@ -1,8 +1,11 @@
-import type { OhanaElement, OhanaProps } from "@ohanaui/types";
+import type {
+  OhanaElement,
+  OhanaElementPropsWithAsChild,
+} from "@ohanaui/types";
 import { ReactNode } from "react";
 
 export type OhanaProxy = {
   [OhanaElementType in OhanaElement]: (
-    props: OhanaProps<OhanaElementType>,
+    props: OhanaElementPropsWithAsChild<OhanaElementType>,
   ) => ReactNode;
 };

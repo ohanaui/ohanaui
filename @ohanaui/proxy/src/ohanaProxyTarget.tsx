@@ -1,5 +1,5 @@
 import { OhanaSlot } from "@ohanaui/slot";
-import { OhanaElement, OhanaProps } from "@ohanaui/types";
+import { OhanaElement, OhanaElementPropsWithAsChild } from "@ohanaui/types";
 import { createElement, forwardRef } from "react";
 
 export type OhanaProxyTargetProps<OhanaElementType extends OhanaElement> = {
@@ -9,7 +9,7 @@ export type OhanaProxyTargetProps<OhanaElementType extends OhanaElement> = {
 export const ohanaProxyTarget = <OhanaElementType extends OhanaElement>({
   element,
 }: OhanaProxyTargetProps<OhanaElementType>) =>
-  forwardRef<HTMLElement, OhanaProps<OhanaElementType>>(
+  forwardRef<HTMLElement, OhanaElementPropsWithAsChild<OhanaElementType>>(
     ({ asChild, children, ...props }, ref) =>
       asChild ? (
         <OhanaSlot {...props}>{children}</OhanaSlot>
