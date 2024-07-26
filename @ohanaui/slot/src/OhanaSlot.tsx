@@ -21,6 +21,6 @@ export const OhanaSlot = forwardRef<HTMLElement, OhanaSlotProps>(
       });
     }
 
-    return null;
+    return children;
   },
 );
