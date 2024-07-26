@@ -1,5 +1,5 @@
 {
-  "name": "@ohanaui/ohanaui",
+  "name": "@ohanaui/constants",
   "version": "0.0.0",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -8,18 +8,8 @@
     "tsc:no-emit": "pnpm run tsc --noEmit",
     "typecheck": "pnpm run tsc:no-emit"
   },
-  "dependencies": {
-    "@ohanaui/constants": "workspace:*",
-    "@ohanaui/merge": "workspace:*",
-    "@ohanaui/proxy": "workspace:*",
-    "@ohanaui/slot": "workspace:*"
-  },
   "devDependencies": {
     "@ohanaui/types": "workspace:*",
     "@tools/typescript": "workspace:*"
-  },
-  "peerDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0"
   }
 }
