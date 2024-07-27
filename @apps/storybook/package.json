@@ -1,0 +1,28 @@
+{
+  "name": "@apps/storybook",
+  "type": "module",
+  "scripts": {
+    "dev": "BROWSER=none pnpm run storybook:dev -p 3001",
+    "storybook": "storybook",
+    "storybook:dev": "pnpm run storybook dev",
+    "tsc": "tsc",
+    "tsc:no-emit": "pnpm run tsc --noEmit",
+    "typecheck": "pnpm run tsc:no-emit"
+  },
+  "dependencies": {
+    "@ohanaui/ohanaui": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.2.5",
+    "@storybook/blocks": "^8.2.5",
+    "@storybook/react": "^8.2.5",
+    "@storybook/react-vite": "^8.2.5",
+    "@tools/typescript": "workspace:*",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.2.5"
+  }
+}
