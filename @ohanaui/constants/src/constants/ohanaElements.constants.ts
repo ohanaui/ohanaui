@@ -181,4 +181,4 @@ const ohanaElementsObject: { [K in OhanaElement]: null } = {
   webview: null,
 };
 
-export const ohanaElements = Object.keys(ohanaElementsObject);
+export const ohanaElements = Object.keys(ohanaElementsObject) as OhanaElement[];
