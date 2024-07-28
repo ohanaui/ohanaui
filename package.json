@@ -5,6 +5,7 @@
   "scripts": {
     "commitlint": "commitlint",
     "commitlint:edit": "pnpm run commitlint --edit",
+    "dev": "pnpm run -r --workspace-concurrency Infinity dev",
     "eslint": "eslint",
     "eslint:all": "pnpm run eslint .",
     "husky": "husky",
@@ -29,9 +30,11 @@
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-astro": "^1.2.3",
     "husky": "^9.1.1",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-packagejson": "^2.5.1",
     "typescript-eslint": "^7.17.0"
   }
