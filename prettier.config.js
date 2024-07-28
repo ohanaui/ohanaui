@@ -2,6 +2,7 @@
 const config = {
   plugins: [
     "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-astro",
     "prettier-plugin-packagejson",
   ],
 };

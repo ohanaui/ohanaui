@@ -1,4 +1,6 @@
+.astro/
 .husky/_/
+dist/
 node_modules/
 
 .DS_Store
