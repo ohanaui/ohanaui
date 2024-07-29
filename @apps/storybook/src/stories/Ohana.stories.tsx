@@ -23,13 +23,13 @@ const meta: Meta<OhanaProps<"div"> & { element: OhanaElement }> = {
 
     return (
       <ohana.div>
-        <ohana.span
-          style={{ color: "blue", display: "block" }}
-        >{`<${element}>`}</ohana.span>
-        <OhanaElement style={{ marginLeft: "1rem" }}>{children}</OhanaElement>
-        <ohana.span
-          style={{ color: "blue", display: "block" }}
-        >{`<${element}>`}</ohana.span>
+        <ohana.span className="block text-blue-500">
+          {`<${element}>`}
+        </ohana.span>
+        <OhanaElement className="ml-4">{children}</OhanaElement>
+        <ohana.span className="block text-blue-500">
+          {`<${element}>`}
+        </ohana.span>
       </ohana.div>
     );
   },

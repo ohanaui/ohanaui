@@ -3,5 +3,5 @@
     "jsx": "react-jsx"
   },
   "extends": ["@tools/typescript/tsconfig.json"],
-  "include": ["./.storybook", "./stories", "./src"]
+  "include": ["./src"]
 }
