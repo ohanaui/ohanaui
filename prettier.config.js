@@ -4,6 +4,7 @@ const config = {
     "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-astro",
     "prettier-plugin-packagejson",
+    "prettier-plugin-tailwindcss",
   ],
 };
 
