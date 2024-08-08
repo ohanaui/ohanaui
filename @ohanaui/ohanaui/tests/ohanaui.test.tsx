@@ -1,12 +1,35 @@
-import { expect, render, screen, test } from "@tools/vitest";
+import { ohana } from "../src";
+import { describe, expect, it, render, screen } from "@tools/vitest";
+import { createRef } from "react";
 
-const sum = (a, b) => a + b;
+describe("ohana", () => {
+  it("renders a DOM element", () => {
+    render(<ohana.div data-testid="ohana" />);
+    expect(screen.getByTestId("ohana").nodeName).toBe("DIV");
+  });
 
-test("adds 1 + 2 to equal 3", () => {
-  expect(sum(1, 2)).toBe(3);
-});
+  it("renders a DOM element with a ref", () => {
+    const ref = createRef<HTMLDivElement>();
+    render(<ohana.div ref={ref} />);
+    expect(ref.current).toBeInstanceOf(HTMLDivElement);
+  });
 
-test("react", () => {
-  render(<div data-testid="p" />);
-  expect(screen.getByTestId("p").nodeName).toBe("DIV");
+  it("renders as its child DOM element when asChild is true", () => {
+    render(
+      <ohana.div asChild data-testid="ohana-as-child">
+        <ohana.span />
+      </ohana.div>,
+    );
+    expect(screen.getByTestId("ohana-as-child").nodeName).toBe("SPAN");
+  });
+
+  it("rrenders as its child DOM element when asChild is true with its child ref", () => {
+    const refAsChild = createRef<HTMLDivElement>();
+    render(
+      <ohana.div asChild ref={refAsChild}>
+        <ohana.span />
+      </ohana.div>,
+    );
+    expect(refAsChild.current).toBeInstanceOf(HTMLSpanElement);
+  });
 });
