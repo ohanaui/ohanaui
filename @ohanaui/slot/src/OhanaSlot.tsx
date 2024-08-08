@@ -1,9 +1,11 @@
+import { ohanaGetSlotRef } from "./ohanaGetSlotRef";
 import { ohanaMerge } from "@ohanaui/merge";
 import {
   cloneElement,
   forwardRef,
   HTMLAttributes,
   isValidElement,
+  ReactElement,
 } from "react";
 
 export type OhanaSlotProps = HTMLAttributes<HTMLElement>;
@@ -16,8 +18,8 @@ export const OhanaSlot = forwardRef<HTMLElement, OhanaSlotProps>(
           object1: props,
           object2: children["props"],
         }),
-        // @ts-expect-error ref typing!
-        ref,
+        // @ts-expect-error ref
+        ref: ohanaGetSlotRef({ element: children as ReactElement, ref }),
       });
     }
 
