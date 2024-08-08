@@ -1,34 +1,34 @@
-import { ohana } from "../src";
+import { ohanaProxy } from "../src";
 import { describe, expect, it, render, screen } from "@tools/vitest";
 import { createRef } from "react";
 
-describe("ohana", () => {
+describe("ohanaProxy", () => {
   it("renders a DOM element", () => {
-    render(<ohana.div data-testid="ohana" />);
-    expect(screen.getByTestId("ohana").nodeName).toBe("DIV");
+    render(<ohanaProxy.div data-testid="ohana-proxy" />);
+    expect(screen.getByTestId("ohana-proxy").nodeName).toBe("DIV");
   });
 
   it("renders a DOM element with a ref", () => {
     const ref = createRef<HTMLDivElement>();
-    render(<ohana.div ref={ref} />);
+    render(<ohanaProxy.div ref={ref} />);
     expect(ref.current).toBeInstanceOf(HTMLDivElement);
   });
 
   it("renders as its child DOM element when asChild is true", () => {
     render(
-      <ohana.div asChild data-testid="ohana-as-child">
-        <ohana.span />
-      </ohana.div>,
+      <ohanaProxy.div asChild data-testid="ohana-proxy-as-child">
+        <ohanaProxy.span />
+      </ohanaProxy.div>,
     );
-    expect(screen.getByTestId("ohana-as-child").nodeName).toBe("SPAN");
+    expect(screen.getByTestId("ohana-proxy-as-child").nodeName).toBe("SPAN");
   });
 
   it("rrenders as its child DOM element when asChild is true with its child ref", () => {
     const refAsChild = createRef<HTMLDivElement>();
     render(
-      <ohana.div asChild ref={refAsChild}>
-        <ohana.span />
-      </ohana.div>,
+      <ohanaProxy.div asChild ref={refAsChild}>
+        <ohanaProxy.span />
+      </ohanaProxy.div>,
     );
     expect(refAsChild.current).toBeInstanceOf(HTMLSpanElement);
   });
