@@ -28,11 +28,14 @@ export const ohanaMerge = <
           const valueType = typeof value;
 
           if (mergeKeyValueType === "object" && valueType === "object")
-            return (merge[key] = { ...mergeKeyValue, ...(value as object) });
+            return (merge[key] = ohanaMerge({
+              object1: mergeKeyValue,
+              object2: value,
+            }));
         }
-
-        return (merge[key] = value);
       }
+
+      return (merge[key] = value);
     });
 
     return merge;
