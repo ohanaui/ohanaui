@@ -20,6 +20,7 @@
     "prettier:check:all": "pnpm run prettier:check .",
     "prettier:write": "pnpm run prettier --write",
     "prettier:write:all": "pnpm run prettier:write .",
+    "test": "pnpm run -r --workspace-concurrency Infinity test",
     "typecheck": "pnpm run -r --workspace-concurrency Infinity typecheck"
   },
   "devDependencies": {

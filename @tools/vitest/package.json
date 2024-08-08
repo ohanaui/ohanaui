@@ -1,0 +1,24 @@
+{
+  "name": "@tools/vitest",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "bin": {
+    "vitest": "./node_modules/vitest/vitest.mjs"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:no-emit": "pnpm run tsc --noEmit",
+    "typecheck": "pnpm run tsc:no-emit"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.0",
+    "@tools/typescript": "workspace:*",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^24.1.1",
+    "vitest": "^2.0.4"
+  }
+}
