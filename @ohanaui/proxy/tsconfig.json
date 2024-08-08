@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "lib": ["DOM"]
   },
   "extends": ["@tools/typescript/tsconfig.json"],
-  "include": ["./src"]
+  "include": ["./src", "./tests"]
 }

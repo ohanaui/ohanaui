@@ -17,6 +17,19 @@ jobs:
       - run: pnpm run lint:check:all
         shell: bash
 
+  test:
+    name: test
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup
+
+      - run: pnpm run test
+        shell: bash
+
   typecheck:
     name: typecheck
 
