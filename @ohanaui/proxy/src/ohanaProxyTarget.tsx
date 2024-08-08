@@ -12,7 +12,9 @@ export const ohanaProxyTarget = <OhanaElementType extends OhanaElement>({
   forwardRef<HTMLElement, OhanaElementPropsWithAsChild<OhanaElementType>>(
     ({ asChild, children, ...props }, ref) =>
       asChild ? (
-        <OhanaSlot {...(props as OhanaSlotProps)}>{children}</OhanaSlot>
+        <OhanaSlot {...(props as OhanaSlotProps)} ref={ref}>
+          {children}
+        </OhanaSlot>
       ) : (
         createElement(element, { ref, ...props }, children)
       ),
