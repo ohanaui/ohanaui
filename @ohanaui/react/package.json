@@ -1,7 +1,7 @@
 {
-  "name": "@ohanaui/merge",
+  "name": "@ohanaui/react",
   "version": "0.0.0",
-  "description": "@ohanaui/merge",
+  "description": "@ohanaui/react",
   "homepage": "https://durksteedjr.com/docs/ohanaui",
   "bugs": {
     "url": "https://github.com/ohanaui/ohanaui/issues"
@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ohanaui/ohanaui",
-    "directory": "@ohanaui/merge"
+    "directory": "@ohanaui/react"
   },
   "license": "MIT",
   "author": "Durk Steed Jr. <contact@durksteedjr.com>",
@@ -30,9 +30,25 @@
     "vitest": "vitest",
     "vitest:dev": "pnpm run vitest dev"
   },
+  "dependencies": {
+    "@ohanaui/merge": "workspace:*"
+  },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^24.1.1",
     "tsup": "^8.3.0",
     "typescript": "^5.5.4",
     "vitest": "^2.0.4"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

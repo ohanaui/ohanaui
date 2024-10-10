@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "lib": ["ES2023"],
-    "skipLibCheck": true
-  },
-  "exclude": ["node_modules"]
-}
