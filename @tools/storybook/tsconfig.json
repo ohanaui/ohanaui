@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx",
     "moduleResolution": "node",
     "skipLibCheck": true
   },
-  "exclude": ["dist/"],
-  "include": ["./**/*.mts", "./**/*.ts"]
+  "include": ["./**/*.ts", "./**/*.tsx"]
 }

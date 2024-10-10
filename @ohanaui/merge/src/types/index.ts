@@ -1,1 +1,1 @@
-export * from "./ohanaMerge.type";
+export * from "./ohanaMerge.types";

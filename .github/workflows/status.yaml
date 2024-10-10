@@ -4,6 +4,19 @@ on:
   pull_request:
 
 jobs:
+  build:
+    name: build
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup
+
+      - run: pnpm run build
+        shell: bash
+
   lint:
     name: lint
 

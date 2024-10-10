@@ -1,6 +1,10 @@
-.astro/
-.husky/_/
+.next/
+.turbo/
+assets/
 dist/
 node_modules/
+storybook-static/
 
 .DS_Store
+.env
+tsconfig.tsbuildinfo
