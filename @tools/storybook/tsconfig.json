@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
+    "moduleResolution": "node",
     "skipLibCheck": true
   },
   "include": ["./**/*.ts", "./**/*.tsx"]
