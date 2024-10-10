@@ -6,7 +6,6 @@
   "scripts": {
     "build": "pnpm run turbo:build",
     "changeset": "changeset",
-    "changeset:publish": "pnpm run changeset publish",
     "changeset:tag": "pnpm run changeset tag",
     "changeset:version": "pnpm run changeset version",
     "ci:publish": "pnpm run build && pnpm publish -r && pnpm run changeset:tag",
@@ -14,7 +13,6 @@
     "commitlint": "commitlint",
     "commitlint:edit": "pnpm run commitlint --edit",
     "dev": "pnpm run turbo:dev",
-    "durksteedjr": "node ./packages/cli/dist/index.mjs",
     "eslint": "eslint",
     "eslint:all": "pnpm run eslint .",
     "husky": "husky",
