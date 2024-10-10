@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node"
+    "skipLibCheck": true
   },
-  "include": ["**/*.mts", "**/*.ts"]
+  "exclude": ["dist/"],
+  "include": ["./**/*.mts", "./**/*.ts"]
 }

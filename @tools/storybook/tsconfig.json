@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "skipLibCheck": true
   },
-  "exclude": ["node_modules"],
   "include": ["./**/*.ts", "./**/*.tsx"]
 }
