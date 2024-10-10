@@ -1,6 +1,4 @@
-.next/
 .turbo/
-assets/
 dist/
 node_modules/
 storybook-static/

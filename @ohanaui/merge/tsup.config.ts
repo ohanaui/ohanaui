@@ -6,6 +6,8 @@ const config = defineConfig({
   entry: ["src/index.ts"],
   format: ["esm"],
   minify: true,
+  sourcemap: true,
+  treeshake: true,
 });
 
 export default config;
