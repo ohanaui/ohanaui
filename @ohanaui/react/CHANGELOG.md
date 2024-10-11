@@ -1,5 +1,13 @@
 # @ohanaui/react
 
+## 1.0.2
+
+### Patch Changes
+
+- bc0f486: 10/12/2024
+- Updated dependencies [bc0f486]
+  - @ohanaui/merge@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes
