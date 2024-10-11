@@ -1,2 +1,7 @@
-- [`@ohanaui/merge`](/@ohanaui/merge/README.md)
-- [`@ohanaui/react`](/@ohanaui/react/README.md)
+# @ohanaui
+
+Polymorphic, type-safe DOM elements.
+
+## Documentation
+
+For comprehensive documentation, view [`@ohanaui/react`](/@ohanaui/react/README.md).
