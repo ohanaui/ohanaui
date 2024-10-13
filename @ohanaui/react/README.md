@@ -10,12 +10,12 @@ npm install @ohanaui/react
 
 ## Rendering DOM Elements
 
-Use `ohanaui` to render any DOM element:
+Use `ohana` to render any DOM element:
 
 ```tsx
-import { ohanaui } from "@ohanaui/react";
+import { ohana } from "@ohanaui/react";
 
-<ohanaui.div />;
+<ohana.div />;
 ```
 
 ## Typing Props
@@ -34,14 +34,14 @@ The following example shows how Ohana may be used to enable polymorphism for a R
 
 ```tsx
 import type { OhanaProps } from "@ohanaui/react";
-import { ohanaui } from "@ohanaui/react";
+import { ohana } from "@ohanaui/react";
 
 type ComponentProps = OhanaProps<"div">;
 
 const Component = ({ children, ...props }: ComponentProps) => (
-  <ohanaui.div className="bg-black text-white" {...props}>
+  <ohana.div className="bg-black text-white" {...props}>
     {children}
-  </ohanaui.div>
+  </ohana.div>
 );
 
 // renders as <div>
@@ -51,8 +51,8 @@ const Component = ({ children, ...props }: ComponentProps) => (
 
 // renders as <a>
 <Component asChild>
-  <ohanaui.a href="/ohanaui">
+  <ohana.a href="/ohanaui">
     Children
-  </ohanaui.a>
+  </ohana.a>
 </Component>
 ```
