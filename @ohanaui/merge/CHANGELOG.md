@@ -1,5 +1,11 @@
 # @ohanaui/merge
 
+## 1.0.4
+
+### Patch Changes
+
+- e7c1e32: 01/07/2025
+
 ## 1.0.3
 
 ### Patch Changes
