@@ -1,3 +1,3 @@
-import React = require("react");
+import React from "react";
 
 export type OhanaElement = keyof React.JSX.IntrinsicElements;
