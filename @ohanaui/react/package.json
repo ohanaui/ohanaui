@@ -1,6 +1,6 @@
 {
   "name": "@ohanaui/react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Polymorphic, type-safe DOM elements.",
   "homepage": "https://durksteedjr.com/docs/ohanaui",
   "bugs": {
